@@ -1,0 +1,21 @@
+body{
+  background-color: black;
+}
+
+#box{
+  width: 50%;
+  margin-left: 25%;
+  color: white;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+.avocado_img{
+  width: 100%;
+  border: 5px solid white;
+}
+
+#header1{
+  text-transform: uppercase;
+  font-size: 3rem;
+}
