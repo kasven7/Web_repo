@@ -9,6 +9,10 @@
   padding: 10px;
 }
 
+.inner-box{
+  background-color: red;
+}
+
 .white-text{
   color: white;
 }
