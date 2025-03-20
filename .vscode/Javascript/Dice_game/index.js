@@ -1,33 +1,22 @@
-var randomNumber = Math.floor(Math.random() * 6) + 1;
+// image1 generation
+var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+document.querySelector(".img1").setAttribute("src", "./images/dice" + randomNumber1 + ".png");
 
 
-if(randomNumber === 1){
-  document.querySelector(".img1").setAttribute("src", "./images/dice1.png");
-  document.querySelector(".img2").setAttribute("src", "./images/dice1.png");
+// image2 generation
+var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+document.querySelector(".img2").setAttribute("src", "./images/dice" + randomNumber2 + ".png");
+
+
+// a script which determines who won or was it a draw
+if(randomNumber1 > randomNumber2){
+  document.querySelector("h1").textContent = "👑 Player 1 wins!";
 }
 
-else if(randomNumber === 2){
-  document.querySelector(".img1").setAttribute("src", "./images/dice2.png");
-  document.querySelector(".img2").setAttribute("src", "./images/dice2.png");
+else if(randomNumber1 < randomNumber2){
+  document.querySelector("h1").textContent = "Player 2 wins! 👑";
 }
 
-else if(randomNumber === 3 ){
-  document.querySelector(".img1").setAttribute("src", "./images/dice3.png");
-  document.querySelector(".img2").setAttribute("src", "./images/dice3.png");
-}
-
-else if(randomNumber === 4){
-  document.querySelector(".img1").setAttribute("src", "./images/dice4.png");
-  document.querySelector(".img2").setAttribute("src", "./images/dice4.png");
-}
-
-else if(randomNumber === 5){
-  document.querySelector(".img1").setAttribute("src", "./images/dice5.png");
-  document.querySelector(".img2").setAttribute("src", "./images/dice5.png");
-}
-
-else if(randomNumber === 6){
-  document.querySelector(".img1").setAttribute("src", "./images/dice6.png");
-  document.querySelector(".img2").setAttribute("src", "./images/dice6.png");
-  
+else{
+  document.querySelector("h1").textContent = "👑 It's a draw! 👑";
 }
