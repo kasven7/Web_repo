@@ -9,10 +9,12 @@
 </head>
 
 <body>
-  <form action="/add" method="post">
+  <form action="/modify" method="post">
     <input type="text" name="country" autofocus placeholder="<%= locals.error ? error :  'Enter country name'%>">
-    <button type="submit">Add</button>
+    <button type="submit" name="add">Add</button>
+    <button type="submit" name="delete" value="delete">Delete</button>
   </form>
+
 
   <section class="ag-canvas">
     <svg class="ag-canvas_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

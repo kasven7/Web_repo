@@ -94,6 +94,10 @@ button {
   cursor: pointer;
 }
 
+button[name="delete"]{
+  background-color: red;
+}
+
 .total-count {
   font-family: "Roboto", sans-serif;
   color: white;
